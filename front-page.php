@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<?php include(TEMPLATEPATH . "/_home_banner.php"); ?>
+	<?php // include(TEMPLATEPATH . "/_home_banner.php"); ?>
 	
 	<div class="column-wrapper layout-d">					
 				
