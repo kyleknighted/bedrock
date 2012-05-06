@@ -13,15 +13,21 @@
 	
 	<?php wp_get_archives('type=monthly&format=link'); ?>
 	
-	<link href="<?php bloginfo('template_directory'); ?>/styles/common.css" rel="stylesheet" media="all" />
+	<?php
 	
-	<?php // register scripts	
-		wp_enqueue_script( 'jquery' ); 
-		wp_register_script( 'theme_common', (get_bloginfo('template_directory') . '/scripts/common.js'));
-		wp_enqueue_script( 'theme_common', '', '', '', true );  
-	?>
-
-	<?php wp_head(); ?> 
+		// load css
+		wp_register_style( 'bedrock_common', get_bloginfo('template_directory') . "/styles/common.css" );
+        wp_enqueue_style( 'bedrock_common' );		
+   
+   		// load scripts	
+		wp_deregister_script('jquery');
+		wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', false, false, true);
+		wp_enqueue_script( 'theme_common', get_bloginfo('template_directory') . '/scripts/common.js', array('jquery'), false, true ); 		
+		wp_enqueue_script( 'theme_common', get_bloginfo('template_directory') . '/scripts/common.js', array('jquery'), false, true ); 
+		
+		wp_head();
+		
+	?> 
 	
 </head>
 
