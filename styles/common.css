@@ -200,7 +200,7 @@
 	/* layouts */
 
 			/* Layout A (1-col Wide) */
-			.layout-a #main-col 	{ width : 100%; }
+			.layout-a #main-col 		{ width : 100%; }
 
 			/* Layout B (2-col Left Sidebar) */
 			.layout-b #left-col 		{ width : 24%; }
