@@ -22,8 +22,7 @@
    		// load scripts	
 		wp_deregister_script('jquery');
 		wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', false, false, true);
-		wp_enqueue_script( 'theme_common', get_bloginfo('template_directory') . '/scripts/common.js', array('jquery'), false, true ); 		
-		wp_enqueue_script( 'theme_common', get_bloginfo('template_directory') . '/scripts/common.js', array('jquery'), false, true ); 
+		wp_enqueue_script( 'theme_common', get_bloginfo('template_directory') . '/scripts/common.js', array('jquery'), false, true );
 		
 		wp_head();
 		
@@ -37,10 +36,10 @@
 
     <div id="header">
 			
-		<?php if (is_page('homepage')) { ?>		
+		<?php if (is_front_page()) { ?>		
 			<h1 id="logo"><?php bloginfo('name'); ?></h1>   			
 		<?php }	else { ?>			
-			<div id="logo"><a href="/" title="<?php bloginfo('name'); ?> Home"><?php bloginfo('name'); ?></a></div>
+			<div id="logo"><a href="<?php site_url(); ?>" title="<?php bloginfo('name'); ?> Home"><?php bloginfo('name'); ?></a></div>
 		<?php } ?>
 		
 		<h3 id="tagline"><? bloginfo('description'); ?></h3>
