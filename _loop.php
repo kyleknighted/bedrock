@@ -14,13 +14,13 @@
 							} else {
 								$title_tag = "h1";
 							} ?>
-								<<?= $title_tag ?>>
+								<<?php echo($title_tag); ?>>
 									<?php if (is_archive() || is_home() || is_search()) { ?>
 										<a href="<?php the_permalink() ?>"><?php the_title() ?></a>
 									<?php } else { ?>
 										<?php the_title() ?>
 									<?php } ?>						
-								</<?= $title_tag ?>>
+								</<?php echo($title_tag); ?>>
 							<?php if (!is_page()) { ?>
 								<p class="post-meta"><?php _e('Posted by ', 'bedrock'); ?><span class="meta-author"><?php the_author_posts_link(); ?></span> <?php _e('on', 'bedrock'); ?> <span class="meta-date"><?php the_time(get_option('date_format')); ?></span></p>
 							<?php }	
