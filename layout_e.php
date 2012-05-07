@@ -10,7 +10,7 @@ Template Name: Layout E Template (50/50)
 		<div id="left-col" class="column">
 		<div class="inner common">
 	
-			<?php include(TEMPLATEPATH . "/_loop.php"); ?>
+			<?php get_template_part('_loop'); ?>
 			
 		</div>		
 		</div>		
@@ -18,7 +18,7 @@ Template Name: Layout E Template (50/50)
 		<div id="right-col" class="column">
 		<div class="inner common">
 		
-			<?php wp_reset_query(); include(TEMPLATEPATH . "/_loop.php"); ?>
+			<?php get_template_part('_loop'); ?>
 
 			<?php // dynamic_sidebar( 'Secondary Sidebar' ); ?>
 

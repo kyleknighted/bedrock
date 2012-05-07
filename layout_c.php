@@ -10,7 +10,7 @@ Template Name: Layout C Template (2-col Right Sidebar)
 		<div id="main-col" class="column">
 		<div class="inner common">
 	
-			<?php include(TEMPLATEPATH . "/_loop.php"); ?>
+			<?php get_template_part('_loop'); ?>
 			
 		</div>		
 		</div>		

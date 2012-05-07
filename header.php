@@ -47,6 +47,6 @@
 					
 		<?php wp_nav_menu(array('menu' => 'Primary Nav', 'container' => false, 'menu_id' => 'primary-nav')); ?>
 		
-		<?php include(TEMPLATEPATH . "/_search_form.php"); ?>
+		<?php get_template_part('_search_form'); ?>
    
     </div>
