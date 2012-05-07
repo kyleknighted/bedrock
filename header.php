@@ -39,7 +39,7 @@
 		<?php if (is_front_page()) { ?>		
 			<h1 id="logo"><?php bloginfo('name'); ?></h1>   			
 		<?php }	else { ?>			
-			<div id="logo"><a href="<?php site_url(); ?>" title="<?php bloginfo('name'); ?> Home"><?php bloginfo('name'); ?></a></div>
+			<div id="logo"><a href="<?php echo (site_url()); ?>" title="<?php bloginfo('name'); ?> Home"><?php bloginfo('name'); ?></a></div>
 		<?php } ?>
 		
 		<h3 id="tagline"><? bloginfo('description'); ?></h3>
