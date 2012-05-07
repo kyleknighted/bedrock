@@ -6,4 +6,3 @@
 			dynamic_sidebar('Blog Sidebar');	
 	}
 ?>
-<?php // display_lipsum(3); ?>
