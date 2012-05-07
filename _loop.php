@@ -1,7 +1,7 @@
 			<?php if (have_posts()) : ?>
 									
 				<?php if (is_archive() || is_search()) { ?>
-					<?php include(TEMPLATEPATH . "/_archive_title.php"); ?>
+					<?php get_template_part('_archive_title'); ?>
 				<?php } ?>
 				
 				<?php while (have_posts()) : the_post(); ?>		
@@ -30,7 +30,7 @@
 							<?php the_excerpt() ?>
 						<?php } else { 
 							the_content();
-							edit_post_link("__('Edit Post')", "<div><small>", "</small></div>");
+							edit_post_link(__('Edit Post'), "<p><small>", "</small></p>");
 								
 						} ?>	
 						
@@ -49,7 +49,7 @@
 
 				<?php endwhile; else : ?>
 			
-				<?php include(TEMPLATEPATH . "/_error.php"); ?>	
+				<?php get_template_part('_error'); ?>	
 				
 			<?php endif; // end loop ?>
 					

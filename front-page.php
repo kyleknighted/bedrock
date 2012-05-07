@@ -13,14 +13,14 @@
 		<div id="main-col" class="column">
 		<div class="inner common">
 	
-			<?php include(TEMPLATEPATH . "/_loop.php"); ?>
+			<?php get_template_part('_loop'); ?>
 			
 		</div>		
 		</div>		
 		
 		<div id="right-col" class="column sidebar">
 
-			<?php include(TEMPLATEPATH . "/sidebar.php"); ?>
+			<?php get_template_part('sidebar'); ?>
 
 		</div>				
 					
