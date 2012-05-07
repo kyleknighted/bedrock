@@ -204,7 +204,7 @@
 
 			/* Layout B (2-col Left Sidebar) */
 			.layout-b #left-col 		{ width : 24%; }
-			.layout-b #main-col 		{ width : 73%; margin-left : 3%; }
+			.layout-b #main-col 		{ width : 73%; margin-left : 3%; float : right; }
 			
 			/* Layout C (2-col Right Sidebar) */
 			.layout-c #main-col 		{ width : 72%; margin-right : 4%; }	
