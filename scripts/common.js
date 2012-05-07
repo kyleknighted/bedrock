@@ -17,7 +17,9 @@
 	    
 	    // primary nav suckerfish hover
 	    jQuery('#primary-nav > li').hover(function() {
-	    	jQuery(this).toggleClass("hover");
+	    	jQuery(this).addClass("hover");
+	    }, function() {
+	    	jQuery(this).removeClass("hover");
 	    });
 	    
 	    // open links in new window
