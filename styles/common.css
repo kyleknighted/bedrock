@@ -203,22 +203,41 @@
 			.layout-a #main-col 		{ width : 100%; }
 
 			/* Layout B (2-col Left Sidebar) */
-			.layout-b #left-col 		{ width : 24%; }
-			.layout-b #main-col 		{ width : 73%; margin-left : 3%; float : right; }
+			.layout-b #left-col 			{ width : 20%; }
+			.layout-b #main-col 			{ width : 80%; float : right; }
+			
+			.layout-b #left-col .inner		{ margin-right : 35px; }
 			
 			/* Layout C (2-col Right Sidebar) */
-			.layout-c #main-col 		{ width : 72%; margin-right : 4%; }	
-			.layout-c #right-col 		{ width : 24%; }												
+			.layout-c #main-col 			{ width : 80%; }	
+			.layout-c #right-col 			{ width : 20%; }			
+												
+			.layout-c #right-col .inner		{ margin-left : 35px; }
 			
 			/* Layout D (3-col) */
-			.layout-d #left-col 		{ width : 20%; }			
-			.layout-d #main-col 		{ width : 55%; margin-left : 2.5%; margin-right : 2.5%; }
-			.layout-d #right-col 		{ width : 20%; }	  			
+			.layout-d #left-col 			{ width : 20%; }			
+			.layout-d #main-col 			{ width : 60%; }
+			.layout-d #right-col 			{ width : 20%; }	  
 			
+			.layout-d #left-col .inner		{ margin-right : 35px; }			
+			.layout-d #right-col .inner		{ margin-left : 35px; }
+						
 			/* Layout E (2-col 50/50) */
-			.layout-e #left-col 		{ width : 48%; margin-right : 4%; }	
-			.layout-e #right-col 		{ width : 48%; }				                        		
+			.layout-e #left-col 			{ width : 50%; }	
+			.layout-e #right-col 			{ width : 50%; }				                        		
 
+			.layout-e #left-col .inner		{ margin-right : 15px; }			
+			.layout-e #right-col .inner		{ margin-left : 15px; }
+			
+			/* Layout F (3-col Thirds) */
+			.layout-e #col-1 				{ width : 33%; }	
+			.layout-e #col-2 				{ width : 33%; }				                        		
+			.layout-e #col-3 				{ width : 33%; }				                        		
+
+			.layout-e #col-1 .inner			{ margin-right : 15px; }			
+			.layout-e #col-2 .inner			{ margin-left : 15px; margin-right : 15px; }			
+			.layout-e #col-3 .inner			{ margin-left : 15px; }			
+			
 	/* main-col contents */		
 	
 			.common h1,
@@ -292,23 +311,23 @@
 		
 		    .common .alignleft {
 		    	float: left;
-		    	margin: 4px 10px 5px 0;
+		    	margin: 2px 10px 5px 0;
 		    	border : 5px solid #fff;
 		    }
 		    
 		    .common .alignright {
 		    	float: right;
-		    	margin: 0 0 5px 10px;
+		    	margin: 2px 0 5px 10px;
 		    	border : 5px solid #fff;
 		    }
 		    
 		    .common .aligncenter {
-		    	margin: 0 auto 0 auto;
+		    	margin: 2px auto 0 auto;
 		    	border : 5px solid #fff;
 		    }
 		    
 		    .common .alignnone {
-		    	margin: 0 0 5px 10px;
+		    	margin: 2px 0 5px 10px;
 		    	border : 5px solid #fff;
 		    }
 		    

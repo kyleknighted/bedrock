@@ -26,7 +26,7 @@ Template Name: Layout D Template (3-col)
 		<div id="right-col" class="column sidebar">
 		<div class="inner common common-form">
 
-			<?php dynamic_sidebar( 'Secondary Sidebar' ); ?>
+			<?php dynamic_sidebar('Blog Sidebar'); ?>
 
 		</div>
 		</div>				

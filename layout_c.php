@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Layout C Template (2-col Right Sidebar)
+Template Name: Layout C Template (Right Sidebar)
 */
 ?>
 <?php get_header(); ?>
