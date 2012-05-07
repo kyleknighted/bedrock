@@ -10,8 +10,8 @@
 		</div>		
 		</div>				
 	
-		<div id="left-col" class="column common-form sidebar">
-		<div class="inner common">
+		<div id="left-col" class="column sidebar">
+		<div class="inner common common-form">
 		
 			<?php get_sidebar(); ?>
 		
