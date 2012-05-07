@@ -8,7 +8,7 @@ Template Name: Layout D Template (3-col)
 	<div class="column-wrapper layout-d">					
 				
 		<div id="left-col" class="column sidebar">
-		<div class="inner common">
+		<div class="inner common common-form">
 		
 			<?php get_sidebar(); ?>
 
@@ -24,7 +24,7 @@ Template Name: Layout D Template (3-col)
 		</div>		
 		
 		<div id="right-col" class="column sidebar">
-		<div class="inner common">
+		<div class="inner common common-form">
 
 			<?php dynamic_sidebar( 'Secondary Sidebar' ); ?>
 

@@ -16,7 +16,7 @@ Template Name: Layout C Template (2-col Right Sidebar)
 		</div>		
 		
 		<div id="right-col" class="column sidebar">
-		<div class="inner common">
+		<div class="inner common common-form">
 		
 			<?php get_sidebar(); ?>
 
